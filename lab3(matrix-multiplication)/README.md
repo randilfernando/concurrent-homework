@@ -20,17 +20,17 @@ Make sure to include openmp using ```-fopenmp``` and make sure to enable c++11 f
 
 ##### Sequential implementation
 ```bash
-g++ sequential.cpp matrix.cpp util.cpp -o sequential -fopenmp -std=c++11
+g++ src/sequential.cpp src/matrix.cpp src/util.cpp -o sequential -fopenmp -std=c++11
 ```
 
 ##### Parallel implementation
 ```bash
-g++ parallel.cpp matrix.cpp util.cpp -o parallel -fopenmp -std=c++11
+g++ src/parallel.cpp src/matrix.cpp src/util.cpp -o parallel -fopenmp -std=c++11
 ```
 
 ##### Optimized implementation
 ```bash
-g++ optimized.cpp matrix.cpp util.cpp -o optimized -O2 -fopenmp -std=c++11
+g++ src/optimized.cpp src/matrix.cpp src/util.cpp -o optimized -O2 -fopenmp -std=c++11
 ```
 >Note: Since the implementation use the features enabled by the O2 optimization and use that to gain additional performance as described in the report, when compiling the optimized version use O2 optimization by adding the '-O2' flag.
 
