@@ -1,13 +1,7 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include "./linked_list.h"
-
-struct operation {
-    int method_number;
-    int random_number;
-};
 
 struct list_node_s *h = NULL;
 

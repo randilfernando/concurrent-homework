@@ -4,19 +4,19 @@ Insert, update and remove data to linked list
 ## Sequential
 Single threaded approach
 ### How to run
-Run ```gcc serial.c``` to compile the program
+Run ```gcc src/sequential.c``` to compile the program
 Then run ```./a.out [n_value] [m_value] [m_member] [m_insert] [m_delete]```
 
 ## One mutex
 Multi threaded approach while using one mutex
 ### How to run
-Run ```gcc -pthread one_mutex.c``` to compile the program
+Run ```gcc -pthread src/one_mutex.c``` to compile the program
 Then run ```./a.out [n_value] [m_value] [m_member] [m_insert] [m_delete] [thread_cont]```
 
 ## Read-write lock
 Multi threaded approach while using read-write lock
 ### How to run
-Run ```gcc -pthread read_write_lock.c``` to compile the program
+Run ```gcc -pthread src/read_write_lock.c``` to compile the program
 Then run ```./a.out [n_value] [m_value] [m_member] [m_insert] [m_delete] [thread_cont]```
 
 ## Program arguments
